@@ -1,7 +1,7 @@
 apps:
   - name: app
-    script    : "./index.js"
+    script    : ./index.js
     watch: false
-    exec_mode : "cluster"
+    exec_mode : cluste
     instances : 2
     max_memory_restart: '200M'
