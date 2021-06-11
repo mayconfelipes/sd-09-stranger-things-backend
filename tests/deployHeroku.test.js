@@ -4,6 +4,7 @@ const data = require('../data/dataset/stranger-things-characters.json');
 require('dotenv').config();
 
 const HAWKINS_URL = `https://${process.env.GITHUB_USER}-bk.herokuapp.com/`
+console.log(HAWKINS_URL)
 const UPSIDEDOWN_URL = `https://${process.env.GITHUB_USER}-bd.herokuapp.com/`
 
 const flipData = data.map(({ name, origin, status }) => ({
