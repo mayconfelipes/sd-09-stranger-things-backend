@@ -9,7 +9,6 @@ class StrangerThingsService {
 
   search({ page, size, ...params }, upsideDownMode) {
     const characters = this.repository.search(params, { page, size });
-    console.log('A')
     if (upsideDownMode) {
       return characters.map(({ name, origin, status }) => ({
         name: flipout(name),
