@@ -19,7 +19,7 @@ app.use(cors());
 
 dotenv.config();
 
-const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
+const hereIsTheUpsideDown = 'true';
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
