@@ -1,0 +1,13 @@
+apps:
+  - name: tkdcris-bk
+    script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    watch: false
+    max_memory_restart: 200M
+  - name: tkdcris-bd
+    script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    watch: false
+    max_memory_restart: 200M
