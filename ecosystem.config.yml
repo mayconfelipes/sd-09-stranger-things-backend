@@ -1,6 +1,6 @@
 apps:
-  
-- name: "brunowedley-stranger-things-backend"
+
+- name: brunowedley-stranger-things-backend
   script: ./index.js
   exec_mode: cluster
   instances: 2
