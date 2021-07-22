@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json ."
   },
@@ -25,6 +26,7 @@
     "eslint-plugin-import": "2.22.0",
     "frisby": "2.1.3",
     "jest": "26.4.2",
-    "js-yaml": "3.14.0"
+    "js-yaml": "3.14.0",
+    "nodemon": "^2.0.12"
   }
 }
