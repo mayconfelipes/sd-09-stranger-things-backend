@@ -33,6 +33,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
+  console.log(process.env);
   console.log(hereIsTheUpsideDown);
   console.log('Escutando na porta 3000');
 });
