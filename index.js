@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
-const hereIsTheUpsideDown = false;
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
