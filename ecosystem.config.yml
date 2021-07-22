@@ -1,6 +1,6 @@
 apps:
-  - name: qu4k3r-stranger-things
-    script: ./index.js
+  - script: ./index.js
+    name: qu4k3r-stranger-things
     exec_mode: cluster
     instances: 2
     max_memory_restart: 200M
