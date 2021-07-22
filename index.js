@@ -7,7 +7,7 @@ const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
 
 const PORT = process.env.PORT || 3000;
-const UPSIDEDOWN_STRING = process.env.UPSIDEDOWN_MODE;
+const UPSIDEDOWN_STRING = process.env;
 
 const StringToBool = (string) => {
   if (string === 'true') return true;
