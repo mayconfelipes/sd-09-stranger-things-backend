@@ -12,7 +12,7 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
-// FIM.
+// FIM
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
