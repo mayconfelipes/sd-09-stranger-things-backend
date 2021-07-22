@@ -19,6 +19,7 @@ class StrangerThingsService {
     }
 
     return characters;
+    
   }
 }
 
