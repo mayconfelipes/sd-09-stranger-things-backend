@@ -8,13 +8,13 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
-const { PORT, UPSIDEDOWN_MODE } = process.env;
+const { PORT } = process.env;
 
-const convertToBoolean = (string) => {
+/* const convertToBoolean = (string) => {
   if (string === 'true') return true;
   return false;
 };
-
+ */
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
