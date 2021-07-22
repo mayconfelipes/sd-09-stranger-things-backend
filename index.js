@@ -9,8 +9,8 @@ const StrangerThingsService = require('./services/StrangerThings');
 const PORT = process.env.PORT || 3000;
 const { UPSIDEDOWN_MODE } = process.env;
 
-const StringToBool = (string) => {
-  if (string === 'true') return true;
+const convertVarEnvToBool = (varEnv) => {
+  if (varEnv === 'true') return true;
   return false;
 };
 
@@ -25,7 +25,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = StringToBool(UPSIDEDOWN_MODE);
+const hereIsTheUpsideDown = convertVarEnvToBool(UPSIDEDOWN_MODE);
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
