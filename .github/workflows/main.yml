@@ -25,7 +25,7 @@ jobs:
         id: evaluator
         uses: betrybe/jest-evaluator-action@v7
         with:
-          repository-test-name: 'betrybe/sd-0x-stranger-things-backend-tests'
+          repository-test-name: 'betrybe/sd-09-stranger-things-backend-tests'
           repository-test-branch: 'master'
           npm-start: true
         env:
