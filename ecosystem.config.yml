@@ -1,0 +1,8 @@
+apps: 
+  - name: layokaminski-backend-app
+    script: ./index.js
+    exec_mode: cluster
+    watch: false
+    instances: 2
+    max_memory_restart: 200M
+  
