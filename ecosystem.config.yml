@@ -1,0 +1,7 @@
+apps:
+  - name: Producao
+    script: ./index.js
+    max_memory_restart: 200M
+    watch: false
+    exec_mode: cluster
+    instances: 2
