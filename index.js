@@ -16,11 +16,11 @@ const strangerThingsService = new StrangerThingsService(
 );
 
 let hereIsTheUpsideDown = false;
-const { PORT, UPSIDEDOWN_MODE } = process.env;
+const { UPSIDEDOWN_MODE } = process.env;
+const PORT = Number(process.env.PORT) || 3000;
 if (UPSIDEDOWN_MODE === 'true') {
   hereIsTheUpsideDown = true;
 }
-
 app.use(cors());
 
 app.get('/', (req, res) => {
