@@ -1,5 +1,5 @@
 apps:
-  - name:
+  - name: backend
     script: ./index.js
     watch: false
     exec_mode: cluster
