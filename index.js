@@ -8,6 +8,8 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const PORT = process.env.PORT || 3000;
 
+console.log(process.env);
+
 const app = express();
 
 const strangerThingsRepository = new StrangerThingsRepository(
