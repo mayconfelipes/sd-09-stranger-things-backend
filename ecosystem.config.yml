@@ -5,7 +5,6 @@ apps:
     instances: 2
     max_memory_restart: 200M
     env:
-      PORT: 3002
       UPSIDEDOWN_MODE: false
   - name: upside-down
     script: ./index.js
@@ -13,5 +12,4 @@ apps:
     instances: 2
     max_memory_restart: 200M
     env:
-      PORT: 3003
       UPSIDEDOWN_MODE: true
