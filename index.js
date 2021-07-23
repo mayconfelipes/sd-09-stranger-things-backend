@@ -33,9 +33,3 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
 });
-
-/* RUN npm install pm2 -g
-ENV PM2_PUBLIC_KEY at9e8cq9cehgfdh
-ENV PM2_SECRET_KEY 64lla1l4myklspg
-
-CMD ["pm2-runtime", "app.js"] */
