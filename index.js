@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv/config');
+require('dotenv').config();
 //  gerenciando variaveis de ambiente nodeJS
 //  https://blog.rocketseat.com.br/variaveis-ambiente-nodejs/
 
@@ -19,10 +19,12 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
+
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
-    process.env.UPSIDEDOWN_MODE,
+    hereIsTheUpsideDown,
   );
 
   res.status(200).json(characters);
