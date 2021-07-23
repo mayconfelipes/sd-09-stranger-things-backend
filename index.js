@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
     process.env.UPSIDEDOWN_MODE,
   );
 
-  res.status(200).json(characters[0]);
+  res.status(200).json(characters);
 });
 
 const { PORT } = process.env;
