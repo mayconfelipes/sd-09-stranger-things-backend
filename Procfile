@@ -1,1 +1,1 @@
-web: pm2 start ecosystem.config.yml --env bd
+web: pm2-runtime start ecosystem.config.yml
