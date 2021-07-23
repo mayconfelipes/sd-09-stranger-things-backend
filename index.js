@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     req.query,
     hereIsTheUpsideDown,
   );
-    console.log(`chegou aqui`);
+    console.log(`chegou !!!!`);
   res.status(200).json(characters);
 });
 
