@@ -1,3 +1,6 @@
 apps:
-  - name: App
+  - name: MatheusMartino97-backend
     script: ./index.js
+    exec_mode: cluster
+    instances: 2
+    max_memory_restart: 200M

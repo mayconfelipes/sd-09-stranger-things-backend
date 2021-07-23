@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-describe.skip('6 - Verifica as variáveis de ambiente', () => {
+describe('6 - Verifica as variáveis de ambiente', () => {
   const apiPort = process.env.PORT;
   const updasideMode = process.env.UPSIDEDOWN_MODE;
 

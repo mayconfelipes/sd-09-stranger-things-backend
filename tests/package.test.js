@@ -1,6 +1,6 @@
 const { scripts } = require('../package.json');
 
-describe.skip('3 - Verifica se os scripts do package.json estão corretos', () => {
+describe('3 - Verifica se os scripts do package.json estão corretos', () => {
   it('Será validado que o comando `start` inicia o server com pm2 e se usa o ecosystem.', () => {
     const scriptParts = scripts.start.split(' ');
     expect(scripts).toHaveProperty('start');
