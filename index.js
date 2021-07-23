@@ -6,7 +6,7 @@ const strangerThingsDataset = require('./data/dataset/stranger-things-characters
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
 
-const port = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -30,6 +30,12 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(port, () => {
-  console.log(`Escutando na porta ${port}`);
+app.listen(PORT, () => {
+  console.log(`Escutando na porta ${PORT}`);
 });
+
+/* RUN npm install pm2 -g
+ENV PM2_PUBLIC_KEY at9e8cq9cehgfdh
+ENV PM2_SECRET_KEY 64lla1l4myklspg
+
+CMD ["pm2-runtime", "app.js"] */
