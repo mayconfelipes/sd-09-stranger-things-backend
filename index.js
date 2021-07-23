@@ -21,12 +21,13 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 app.get('/', (req, res) => {
-  const characters = strangerThingsService.search(
+  return res.send('<h2>xablau é o nome da fera</h2>');
+  /* const characters = strangerThingsService.search(
     req.query,
     UPSIDEDOWN_MODE,
   );
 
-  res.status(200).json(characters, '<h2>xablau é o nome da fera</h2>');
+  res.status(200).send(characters); */
 });
 
 app.listen(PORT, () => { console.log(`Escutando na porta ${PORT}`); });
