@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
     process.env.UPSIDEDOWN_MODE,
   );
 
-  res.status(200).json(characters);
+  res.status(200).json(characters[0]);
 });
 
 const { PORT } = process.env;
@@ -48,3 +48,14 @@ app.listen(PORT, () => {
 // passo 10: configurações do .env em index.js
 // passo 11: modificando o nome do app para gerar compatibilidade com o teste: 
 // heroku apps:rename adriano-stranger-heroku-bd --app adriano-stranger-heroku
+// fonte: https://stackoverflow.com/questions/14161098/whats-the-correct-way-to-rename-a-heroku-app
+// passo 12: criando um novo remote para upsidedown=false;
+// heroku create --remote adriano-stranger-heroku-bk
+// passo 13: realizando o deploy:
+//  git add. , git commit, git push adriano-stranger-heroku-bk adrianoforcellini-strangerthings:main 
+// passo 14: não deu certo. trocando nome do app:
+// heroku apps:rename adriano-stranger-heroku-bk --app gentle-fjord-15296
+// passo 15: modificando a variavel UPSIDEDOWN_MODE e realizando o push para o app.
+// git push adriano-stranger-heroku-bk adrianoforcellini-strangerthings:main
+// deu super certo. mas não isso que o teste queria não, viajei.
+// passo 16: voltar a variavel e fazer a modificação adequada.
