@@ -1,17 +1,17 @@
 apps:
-  - name: 'hawkings'
-    script: './index.js'
-    exec_mode: 'cluster'
+  - name: hawkings
+    script: ./index.js
+    exec_mode: cluster
     instances: 2
-    max_memory_restart: '200M'
+    max_memory_restart: 200M
     env:
-      PORT: 3000
+      PORT: 3002
       UPSIDEDOWN_MODE: false
-  - name: 'upside-down'
-    script: './index.js'
-    exec_mode: 'cluster'
+  - name: upside-down
+    script: ./index.js
+    exec_mode: cluster
     instances: 2
-    max_memory_restart: '200M'
+    max_memory_restart: 200M
     env:
-      PORT: 3000
+      PORT: 3003
       UPSIDEDOWN_MODE: true

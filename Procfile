@@ -1,1 +1,1 @@
-web: pm2-runtime start ecosystem.config.yml --name upside-down
+web: pm2-runtime start ecosystem.config.yml --only upside-down
