@@ -24,13 +24,12 @@ app.get('/', (req, res) => {
     req.query,
     hereIsTheUpsideDown,
   );
-    console.log(`chegou !!!!`);
   res.status(200).json(characters);
 });
 
 // const { PORT } = process.env;
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
