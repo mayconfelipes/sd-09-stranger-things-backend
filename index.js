@@ -23,7 +23,7 @@ app.use(cors());
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
-    UPSIDEDOWN_MODE,
+    // UPSIDEDOWN_MODE,
     console.log(UPSIDEDOWN_MODE),
   );
 
