@@ -1,12 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv/config');
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
+
+const PORT = process.env.PORTA || 3000;
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
@@ -31,5 +34,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Escutando na porta 3000');
+  console.log(`Escutando na porta ${PORT}`);
 });
