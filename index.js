@@ -27,6 +27,16 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(3000, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
   console.log('Escutando na porta 3000');
 });
+
+// passo 1: git clone https://github.com/tryber/sd-09-stranger-things-backend.git
+// passo 2: cd path_sd-09-stranger-things-backend
+// passo 3: heroku login
+// passo 4: git checkout -b adrianoforcellini-strangerthings
+// passo 5: npm i expres's
+// passo 6: heroku create adriano-stranger-heroku
+// passo 7: git commit -am 'iniciando deploy'
+// passo 8: git push heroku adrianoforcellini-strangerthings
