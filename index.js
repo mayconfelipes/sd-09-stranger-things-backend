@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     UPSIDEDOWN_MODE,
   );
 
-  res.status(200).json(characters);
+  res.status(200).json(characters, '<h2>xablau é o nome da fera</h2>');
 });
 
 app.listen(PORT, () => { console.log(`Escutando na porta ${PORT}`); });
