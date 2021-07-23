@@ -36,11 +36,15 @@ app.listen(PORT, () => {
   console.log('Escutando na porta 3000');
 });
 
-// passo 1: git clone https://github.com/tryber/sd-09-stranger-things-backend.git
-// passo 2: cd path_sd-09-stranger-things-backend
-// passo 3: heroku login
-// passo 4: git checkout -b adrianoforcellini-strangerthings
-// passo 5: npm i express
-// passo 6: heroku create adriano-stranger-heroku
-// passo 7: git commit -am 'iniciando deploy'
-// passo 8: git push heroku adrianoforcellini-strangerthings:main
+// passo 01: git clone https://github.com/tryber/sd-09-stranger-things-backend.git
+// passo 02: cd path_sd-09-stranger-things-backend
+// passo 03: heroku login
+// passo 04: git checkout -b adrianoforcellini-strangerthings
+// passo 05: npm i express
+// passo 06: heroku create adriano-stranger-heroku
+// passo 07: git commit -am 'iniciando deploy'
+// passo 08: git push heroku adrianoforcellini-strangerthings:main
+// passo 09: criação do arquivo .env  e das variaveis de ambiente.
+// passo 10: configurações do .env em index.js
+// passo 11: modificando o nome do app para gerar compatibilidade com o teste: 
+// heroku apps:rename adriano-stranger-heroku-bd --app adriano-stranger-heroku
