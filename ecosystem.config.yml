@@ -1,6 +1,6 @@
 apps:
-  - name: backend
-    script: ./index.js
+  - script: ./index.js
+    name: backend
     exec_mode: cluster
     instances: 2
     watch: false
