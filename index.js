@@ -23,14 +23,14 @@ const PORT = process.env.PORT || 3000;
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
-    hereIsTheUpsideDown,
+    hereIsTheUpsideDown === 'true',
   );
 
   res.status(200).json(characters);
 });
 
 app.listen(PORT, () => {
-  console.log('Escutando na porta 3000');
+  console.log(`Escutando na porta ${PORT}`);
 });
 
 // obla-di
