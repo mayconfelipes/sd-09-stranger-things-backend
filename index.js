@@ -59,3 +59,5 @@ app.listen(PORT, () => {
 // git push adriano-stranger-heroku-bk adrianoforcellini-strangerthings:main
 // deu super certo. mas não isso que o teste queria não, viajei.
 // passo 16: voltar a variavel e fazer a modificação adequada.
+
+// passo 17: Pedir socorro para a Ana Karine. Me ajudou a compreender as configurações necessarias.
