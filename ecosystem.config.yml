@@ -1,5 +1,5 @@
 apps:
-  - name: "filipe-louzano-stranger-backend"
+  - name: "filipe-louzano-stranger-things-backend"
     script: "./index.js"
     exec_mode: "cluster"
     instances: 2
