@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
+const hereIsTheUpsideDown = process.env.UPSIDE_DOWN_MODE === 'true'; 
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
