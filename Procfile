@@ -1,1 +1,1 @@
-web: pm2 start ecosystem.config.yml
+web: node index.js
