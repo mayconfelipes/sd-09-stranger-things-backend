@@ -22,14 +22,18 @@ app.use(cors());
 
 const hereIsTheUpsideDown = UPSIDEDOWN_MODE;
 
-app.get('/', (req, res) => {
-  const characters = strangerThingsService.search(
-    req.query,
-    hereIsTheUpsideDown,
-  );
-
-  res.status(200).json(characters);
+app.get('/', (_req, res) => {
+  res.status(200).json({message: `Funcionando essa merda na port - ${PORT}`})
 });
+
+// app.get('/', (req, res) => {
+//   const characters = strangerThingsService.search(
+//     req.query,
+//     hereIsTheUpsideDown,
+//   );
+
+//   res.status(200).json(characters);
+// });
 
 app.listen(PORT, () => {
   console.log(`Escutando na porta ${PORT}`);
