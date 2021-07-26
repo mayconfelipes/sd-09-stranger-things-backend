@@ -22,4 +22,6 @@ class StrangerThingsService {
   }
 }
 
+// pra fazer o primeiro commit e abrir PR
+
 module.exports = StrangerThingsService;
