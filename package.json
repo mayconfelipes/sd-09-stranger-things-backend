@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "pm2-runtime start ecosystem.config.yml",
+    "start:dev": "pm2 start index.js --watch",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json ."
   },
@@ -12,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "pm2": "4.5.5",
     "@pm2/pm2-version-check": "1.0.3",
     "cors": "2.8.5",
     "dotenv": "8.2.0",
