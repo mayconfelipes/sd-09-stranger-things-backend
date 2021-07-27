@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 
+const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN;
+
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
@@ -26,7 +28,7 @@ app.get('/', (req, res) => {
 
   res.status(200).json(characters);
 });
-
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log('Escutando na porta 3000');
 });
