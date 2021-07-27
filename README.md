@@ -1,7 +1,7 @@
 # Boas vindas ao repositório backend do projeto de Deploy - Stranger Things!
 
 Aqui você vai encontrar os locais para colocar suas repostas relativas aos requisitos de frontend.
-ok,
+
 
 **Lembre-se**: coloque as respostas apenas dos requisitos que contém o seguinte direcionamento:
 
