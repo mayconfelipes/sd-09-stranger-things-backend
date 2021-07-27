@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 
-const UPSIDEDOWN_MODE = process.env.UPSIDEDOWN;
+const UPSIDEDOWN_MODE = Boolean(process.env.UPSIDEDOWN) || true;
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
