@@ -1,0 +1,9 @@
+apps:
+
+- name: stranger-things-backend
+  script: ./index.js
+  exec_mode: cluster
+  instances: 2
+# Se o modo watch esta configurado para estar desativado.
+
+  max_memory_restart: 200M
