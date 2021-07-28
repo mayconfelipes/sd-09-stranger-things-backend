@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 
+require('dotenv/config');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsService = require('./services/StrangerThings');
