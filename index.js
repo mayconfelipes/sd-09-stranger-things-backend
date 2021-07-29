@@ -17,7 +17,11 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
+const convertStringToBoolean = (text) => {
+  return text === 'true';
+};
+
+const hereIsTheUpsideDown = convertStringToBoolean(process.env.UPSIDEDOWN_MODE) || false;
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
