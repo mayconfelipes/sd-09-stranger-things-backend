@@ -17,7 +17,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = process.env.PORT || false;
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE || false;
 // quando nao for passada alguma variavel, ela vem com valor de string === true, portanto, quando nao for passado nada, será falso
 
 app.get('/', (req, res) => {
