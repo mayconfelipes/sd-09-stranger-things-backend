@@ -15,15 +15,15 @@ const strangerThingsService = new StrangerThingsService(
 );
 
 app.use(cors());
-const { PORT, UPSIDEDOWN_MODE } = process.env;
-const hereIsTheUpsideDown = transformationBoolean(UPSIDEDOWN_MODE);
 
+const { PORT, UPSIDEDOWN_MODE } = process.env;
 const transformationBoolean = () => {
   if (UPSIDEDOWN_MODE === 'false') {
     return false
   }
   return true;
 }
+const hereIsTheUpsideDown = transformationBoolean();
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
