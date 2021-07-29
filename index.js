@@ -17,9 +17,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const convertStringToBoolean = (text) => {
-  return text === 'true';
-};
+const convertStringToBoolean = (text) => (text === 'true');
 
 const hereIsTheUpsideDown = convertStringToBoolean(process.env.UPSIDEDOWN_MODE) || false;
 
