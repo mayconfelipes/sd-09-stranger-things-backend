@@ -16,9 +16,11 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
+require('dotenv/config');
+
 const { PORT, UPSIDEDOWN_MODE } = process.env;
 const hereIsTheUpsideDown = UPSIDEDOWN_MODE === 'true';
-
+console.log(hereIsTheUpsideDown);
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
     req.query,
