@@ -7,7 +7,7 @@
     "start": "pm2-runtime start ecosystem.config.yml",
     "test": "jest --runInBand  --detectOpenHandles --forceExit",
     "lint": "eslint --no-inline-config --ext .js,.jsx --no-error-on-unmatched-pattern -c .eslintrc.json .",
-    "start:dev": "pm2-runtime start index.js --watch"
+    "start:dev": "pm2-runtime start index.js --name app --watch"
   },
   "keywords": [],
   "author": "",
