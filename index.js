@@ -34,5 +34,5 @@ const PORT = process.env.PORT || 3000;
 const SERVER_ENV = process.env.SERVER_ENV || 'development';
 
 app.listen(PORT, () => {
-  console.log(`Escutando na porta ${PORT} e seu estado é: ${SERVER_ENV}`);
+  console.log(`Escutando na porta: ${PORT} e seu estado é: ${SERVER_ENV}`);
 });
