@@ -6,4 +6,8 @@ Aqui você vai encontrar os locais para colocar suas repostas relativas aos requ
 
   - Adicione os comandos utilizados, de maneira sequencial, ao README do frontend.
 
+heroku create mayconfelipes-bd --buildpack mars/create-react-app
+heroku create mayconfelipes-bk --buildpack mars/create-react-app
+npm install dotenv
+
 **Nota**: Este direcionamento está presente no [repositório](https://github.com/betrybe/sd-0x-stranger-things) em que os requisitos do projeto são destrinchados.
