@@ -33,5 +33,5 @@ const PORT = process.env.PORT || 3000;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
 app.listen(PORT, () => {
-  console.log(`Escutando na porta: ${PORT} e seu estado é: ${hereIsTheUpsideDown}`);
+  console.log(`Escutando na porta: ${PORT} e seu estado é: ${NODE_ENV}`);
 });
