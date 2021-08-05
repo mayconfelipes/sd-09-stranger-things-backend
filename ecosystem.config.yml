@@ -5,5 +5,3 @@ apps:
     instances: 2
     watch: false
     max_memory_restart: '200M'
-
-/* desenvolvido na war room esquci o nome do cidadão que me guiou :( */
