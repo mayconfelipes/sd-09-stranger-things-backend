@@ -1,1 +1,1 @@
-web: pm2 start index.js --watch --name stranger-things-backend
+web: pm2 start index.js --name stranger-things-backend
