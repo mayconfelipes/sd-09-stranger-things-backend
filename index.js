@@ -15,12 +15,12 @@ const strangerThingsService = new StrangerThingsService(
 );
 
 app.use(cors());
+
+// Verifiquei no PR da Nathalia como corrigir o problema de não conseguir ler a variável corretamente no heroku https://github.com/tryber/sd-09-stranger-things-backend/pull/87/commits/7cae5ddae25f75ad5e9d1d643abd913e90d922bb
+
 const upsideDown = process.env.UPSIDEDOWN_MODE;
-const hereIsTheUpsideDown = () => {
-  if (upsideDown === 'true') return true;
-  return false;
-}
-console.log(hereIsTheUpsideDown);
+const hereIsTheUpsideDown = /true/i.test(upsideDown);
+
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
