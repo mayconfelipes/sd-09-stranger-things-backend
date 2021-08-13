@@ -5,7 +5,7 @@ apps:
     instances: 2
     watch: false
     max-memory-restart: 20M
-    env_hawkins:
+    hawkins:
       UPSIDEDOWN_MODE: false
-    env_upside-down:
+    upside-down:
       UPSIDEDOWN_MODE: true
