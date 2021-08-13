@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 
-//
 require('dotenv').config();
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
@@ -20,7 +19,8 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
+// referência na thread do slack : https://app.slack.com/client/TMDDFEPFU/C01DJFH0DNW/thread/C01DJFH0DNW-1627607827.000700
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
