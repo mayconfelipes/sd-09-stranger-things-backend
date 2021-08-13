@@ -19,7 +19,6 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-// referência na thread do slack : https://app.slack.com/client/TMDDFEPFU/C01DJFH0DNW/thread/C01DJFH0DNW-1627607827.000700
 const hereIsTheUpsideDown = JSON.parse(process.env.UPSIDEDOWN_MODE);
 
 app.get('/', (req, res) => {
